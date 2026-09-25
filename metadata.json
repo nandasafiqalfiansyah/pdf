@@ -1,0 +1,6 @@
+{
+  "name": "PDF Tools - Solusi Dokumen PDF Lengkap & Gratis",
+  "description": "Platform PDF serbaguna gratis tanpa login. Gabung, pisahkan, kompres, dan konversi PDF ke Word, Excel, PPT, JPG atau sebaliknya dengan cepat dan aman langsung di browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
