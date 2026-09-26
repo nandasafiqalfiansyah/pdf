@@ -74,6 +74,7 @@ export default function App() {
         onScrollToFeatures={() => scrollToSection('features-section')}
         onScrollToHowItWorks={() => scrollToSection('how-it-works-section')}
         onScrollToFaq={() => scrollToSection('faq-section')}
+        onSelectToolById={handleSelectToolById}
       />
 
       <main className="flex-1">
