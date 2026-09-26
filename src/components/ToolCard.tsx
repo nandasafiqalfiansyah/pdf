@@ -22,7 +22,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool, index, onSelect }) => 
   return (
     <div
       onClick={() => onSelect(tool)}
-      className="group relative flex flex-col justify-between p-6 bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-700/80 rounded-2xl transition-all duration-200 cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/30 hover:-translate-y-0.5"
+      className="group relative flex flex-col justify-between h-full p-5 sm:p-6 bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-700/80 rounded-2xl transition-all duration-200 cursor-pointer shadow-sm hover:shadow-xl hover:shadow-black/30 hover:-translate-y-0.5"
     >
       <div>
         {/* Top header row */}

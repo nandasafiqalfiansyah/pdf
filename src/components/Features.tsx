@@ -12,7 +12,7 @@ export const Features: React.FC = () => {
     {
       icon: UserX,
       title: 'Bebas Tanpa Perlu Login',
-      desc: 'Langsung gunakan seluruh 12 alat tanpa registrasi, tanpa email, dan tanpa batasan langganan berbayar.',
+      desc: 'Langsung gunakan seluruh 20 alat lengkap tanpa registrasi, tanpa email, dan tanpa batasan langganan berbayar.',
       color: '#f43f5e',
     },
     {

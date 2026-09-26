@@ -653,40 +653,40 @@ export const ActiveToolWorkspace: React.FC<ActiveToolWorkspaceProps> = ({ tool, 
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <div className="max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
       {/* Top Bar Navigation inside Workspace */}
-      <div className="flex items-center justify-between gap-4 mb-6">
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors cursor-pointer"
+          className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-slate-900/80 hover:bg-slate-800 border border-slate-800 py-1.5 px-3 rounded-xl transition-all cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali ke Semua Alat</span>
         </button>
 
-        <div className="text-xs text-slate-400 flex items-center gap-1.5">
+        <div className="text-[11px] sm:text-xs text-slate-400 flex items-center gap-1.5 bg-slate-900/50 py-1 px-2.5 rounded-lg border border-slate-800/60">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-          <span>Mode Aman · Tanpa Unggah Server</span>
+          <span>Mode Aman · 100% di Browser</span>
         </div>
       </div>
 
       {/* Main Tool Container */}
-      <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-xl">
+      <div className="bg-slate-900/90 border border-slate-800 rounded-3xl p-4 sm:p-8 shadow-2xl backdrop-blur-xl">
         {/* Tool Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800/80">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-800/80">
+          <div className="flex items-start sm:items-center gap-3.5 sm:gap-4">
             <div
-              className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center shrink-0 shadow-lg"
               style={{
                 backgroundColor: `${tool.accentColor}20`,
                 border: `1px solid ${tool.accentColor}40`,
               }}
             >
-              <ToolIcon name={tool.icon} className="w-7 h-7" color={tool.accentColor} />
+              <ToolIcon name={tool.icon} className="w-6 h-6 sm:w-7 sm:h-7" color={tool.accentColor} />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white tracking-tight">{tool.title}</h1>
-              <p className="text-sm text-slate-400 mt-0.5">{tool.fullDesc}</p>
+              <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">{tool.title}</h1>
+              <p className="text-xs sm:text-sm text-slate-400 mt-0.5 leading-relaxed">{tool.fullDesc}</p>
             </div>
           </div>
 
@@ -694,7 +694,7 @@ export const ActiveToolWorkspace: React.FC<ActiveToolWorkspaceProps> = ({ tool, 
             <button
               onClick={resetAll}
               disabled={isProcessing}
-              className="self-start sm:self-auto text-xs text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-1 cursor-pointer disabled:opacity-50"
+              className="self-start sm:self-auto text-xs text-slate-400 hover:text-rose-400 transition-colors flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-950/60 border border-slate-800 cursor-pointer disabled:opacity-50"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Ganti File</span>
@@ -721,7 +721,7 @@ export const ActiveToolWorkspace: React.FC<ActiveToolWorkspaceProps> = ({ tool, 
               onDragLeave={handleDragLeave}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className={`border-2 border-dashed rounded-2xl p-10 sm:p-14 text-center cursor-pointer transition-all duration-200 ${
+              className={`border-2 border-dashed rounded-3xl p-7 sm:p-14 text-center cursor-pointer transition-all duration-200 ${
                 isDragging
                   ? 'border-rose-500 bg-rose-500/10 scale-[1.01]'
                   : 'border-slate-700/80 hover:border-slate-500 bg-slate-950/40 hover:bg-slate-950/60'

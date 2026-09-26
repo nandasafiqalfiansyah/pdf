@@ -16,7 +16,11 @@ export const FAQ: React.FC = () => {
     },
     {
       q: 'Apakah benar-benar gratis tanpa perlu login?',
-      a: 'Ya, seluruh 12 alat dapat digunakan tanpa biaya, tanpa perlu mendaftar akun, dan tanpa batas langganan. Kami percaya alat utilitas dasar harus dapat diakses dengan mudah oleh semua orang.',
+      a: 'Ya, seluruh 20 alat lengkap dapat digunakan tanpa biaya, tanpa perlu mendaftar akun, dan tanpa batas langganan seumur hidup. Kami percaya alat utilitas dokumen dasar harus dapat diakses dengan mudah oleh semua orang.',
+    },
+    {
+      q: 'Bagaimana cara menambahkan tanda tangan elektronik (Sign PDF)?',
+      a: 'Anda dapat langsung menggambar tanda tangan basah di kanvas layar menggunakan kursor mouse, touchpad laptop, atau layar sentuh smartphone, atau mengunggah berkas gambar paraf transparan (PNG). Tanda tangan dapat ditempatkan di halaman dan sudut mana pun yang Anda tentukan.',
     },
     {
       q: 'Apakah ada watermark pada dokumen yang dihasilkan?',
